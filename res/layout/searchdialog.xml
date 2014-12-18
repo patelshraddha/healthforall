@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:gravity="center" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchuserid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/shapes"
+            android:gravity="center"
+            android:hint="               Email or Id           "
+            android:textColor="#A0522D" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/searchpositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="true"
+            android:text=" Search  "
+            fontawesometext:bb_icon_right="fa-search"
+            fontawesometext:bb_size="medium"
+            fontawesometext:bb_type="login" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/searchnegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="true"
+            android:text="Go Back"
+            fontawesometext:bb_icon_right="fa-sign-out"
+            fontawesometext:bb_size="medium"
+            fontawesometext:bb_type="login" >
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+    </LinearLayout>
+
+</LinearLayout>
